@@ -66,10 +66,10 @@ Gary Bernhardt
 !SLIDE
 ## With spec_helper - 15.741 seconds
 
-## What's the difference?
+## Without:
 
 !SLIDE
-# 15.555 seconds
+# 0.186 seconds
     @@@ ruby
     # spec/some_spec.rb
     # require 'spec_helper'
