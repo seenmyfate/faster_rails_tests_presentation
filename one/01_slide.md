@@ -89,8 +89,21 @@ Gary Bernhardt
 ## Why are we loading the entire rails environment?
 
 * Because our business logic is in our active record models
-
 * And we need rails to run tests against classes that inherit from ActiveRecord::Base
+* Because we're breaking SRP
+
+!SLIDE bullets incremental
+# Single Responsibility Principle
+
+* A class should only have one reason to change
+
+!SLIDE bullets incremental
+# The solution
+
+* Extract business logic into modules
+* Extract domain objects into classes
+* Mixin and delegate
+* Test in isolation
 
 !SLIDE
 # An example
@@ -130,22 +143,7 @@ Gary Bernhardt
     Finished in 0.24435 seconds
     1 example, 0 failures
     rspec spec 7.092 total    
-    
-    
-!SLIDE bullets incremental
-# Single Responsibility Principle
-
-* A class should only have one reason to change
-
-
-!SLIDE bullets incremental
-# The solution
-
-* Extract business logic into modules
-* Extract domain objects into classes
-* Mixin and delegate
-* Test in isolation
-
+        
 !SLIDE
 # Extract behaviour into modules
     @@@ ruby
