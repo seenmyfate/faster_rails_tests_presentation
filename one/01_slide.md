@@ -96,7 +96,7 @@ Gary Bernhardt
 * A class should only have one reason to change
 
 !SLIDE bullets incremental
-# The solution
+# 4 Steps
 
 * Extract business logic into modules
 * Extract domain objects into classes
