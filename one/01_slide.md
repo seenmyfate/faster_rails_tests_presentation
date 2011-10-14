@@ -10,8 +10,8 @@
 !SLIDE bullets incremental
 #A bold statement
 
-* If you have never noticed that running rails tests is slow, then you are not doing TDD
-* or you're much more patient than me
+* If you have never noticed that Rails tests can be slow, then you are not doing TDD
+* or you're much more patient than I am
 
 !SLIDE commandline incremental
 #Let's look at some numbers
@@ -149,7 +149,8 @@ Gary Bernhardt
     @@@ ruby
     module DiscountCalculator
       def total_discount
-        basket_items.collect(&:discount).inject(:+)
+        basket_items.collect(&:discount).
+          inject(:+)
       end
     end
 
@@ -243,7 +244,7 @@ Gary Bernhardt
     rspec spec 0.342 total
 
 !SLIDE bullets incremental
-# 4 Steps to Faster Rails Tests
+## The benefits
 
 * Higher Cohesion
 * Lightning fast tests
