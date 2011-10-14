@@ -8,10 +8,9 @@
 ### tom-clements.com | github.com/seenmyfate
 ### @Seenmyfate
 !SLIDE bullets incremental
-#A bold statement
+#A question
 
-* If you have never noticed that Rails tests can be slow, then you are not doing TDD
-* or you're much more patient than I am
+* How long does it take to run your unit tests?
 
 !SLIDE commandline incremental
 #Let's look at some numbers
@@ -49,7 +48,6 @@
 ## Here's some common suggestions
 
 * Don't Test
-* (There's always one..)
 * Get an SSD
 * Use Spork
 
